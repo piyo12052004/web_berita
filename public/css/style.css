@@ -1,0 +1,834 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',arial, sans-serif;
+}
+@media (min-width: 992px) {
+    .app-mobile{
+        display: none;
+    }
+
+    .body{
+        background-color: #f9f9f9;
+    }
+    .container{
+        background-color: white;
+    }
+    /* navbar */
+    .navbar{
+        background-color: white;
+        box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        position: static;
+        width: 100%;
+        z-index: 99;
+    }
+    #textContainer a{
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+        padding-left: 15px;
+    }
+
+    .nav-icon-serch .nav-main-home span {
+        color:#792166 ;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .nav-icon-serch table td{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .nav-icon-serch .nav-main-date span{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500px;
+    }
+    .nav-icon-serch .nav-main-home{
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .navbar .nav-tranding{
+        background:#21409a linear-gradient(100deg, #21409a 50%, #007cbd 100%);
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 500px;
+        height: 30px;
+        margin: 6px 0;
+        padding-left: 20px;
+        align-items: center;
+        display: flex;
+    }
+        /* sedbar */
+    .angker-sidbar{
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .offcanvas{
+        background:#21409a linear-gradient(100deg, #21409a 50%, #007cbd 100%) ;
+    }
+    .offcanvas-body div ul{
+        list-style: none;
+    }
+    .offcanvas-title{
+        font-weight: bold;
+        color: white;
+    }
+    .offcanvas-body .sedbar-list-nav ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 50px;
+    }
+    .button-category{
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 15px;
+    }
+    .button-category:hover{
+        color: #007cbd;
+    }
+
+    .offcanvas-body .sedbar-list-nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .offcanvas-body .sedbar-list-nav ul li a:hover{
+        color:#007cbd;
+    }
+    .navbar .nav-tranding .icon-nav-main{
+        animation: rotate 2s linear infinite;
+        color: yellow;
+    }
+    @keyframes rotate {
+        from {
+        transform: rotate(0deg); /* Rotasi awal (0 derajat) */
+        }
+        to {
+        transform: rotate(360deg); /* Rotasi selesai (360 derajat) */
+        }
+    }
+    .navbar .nav-tranding span{
+        padding: 10px;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    /* content */
+    .content{
+        padding-top: 100px;
+    }
+    .logo-web img{
+        width: 300px;
+        padding-top: 100px;
+    }
+    .web-category{
+        background:#21409a linear-gradient(100deg, #21409a 50%, #007cbd 100%) ;
+        margin-top: 25px;
+        border-radius: 5px;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        padding-left: 30px;
+    }
+    .web-category table tr th{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 15px;
+    }
+    .web-category table tr button:hover{
+        color: yellow;  
+    }
+    .nav-category-dua{
+        background-color: #f9f9f9;
+        border-radius:5px ;
+    }
+    .nav-category-dua table tr td{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding: 10px;
+    }
+    .nav-category-dua table tr td a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+    }
+            /* posingan */
+    .content-post{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-post .card{
+        width: 210px;
+        height: 250px;
+        margin: auto;
+        border: none;
+    }
+    .content-post a{
+        text-decoration: none;
+        margin: auto;
+        border: none;
+    }
+    .content-post a .body-car:hover{
+        color: blue;
+    }
+    .content-post .head-card img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+    .content-post .head-card{
+        
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .content-post .head-card:hover img {
+        transform: scale(1.2);
+        border-radius: 10px;
+
+    }
+
+    .content-post .body-car{
+        font-size: 17px;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
+    .berita-terkini .carousel-inner .carousel-item img{
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .kontent-blog{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .kontent-blog .cart{
+        border: 1px solid black;
+        width: 200px;
+    }
+    .kontent-blog .cart .cart-head img{
+        width: 100%;
+        height: 200px;
+    }
+        /* berita populer */
+    .berita-populer a{
+        display: flex;
+        justify-content: end;
+        width: 100%;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+    }
+    .berita-populer a:hover{
+        color: #21409a;
+    }
+    .berita-populer .img-berita-populer{
+        height: 300px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+    }
+    .berita-populer .img-berita-populer img{
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .text-berita-populer{
+        display: flex;
+        align-items: center;
+    }
+
+    .text-berita-populer p{
+        font-size: 20px;
+        font-weight: bold;
+        
+    }
+        /* main postingan  */
+    .clickable-element a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        padding: 20px;
+    }
+    .clickable-element a .main-post{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .clickable-element a:hover{
+        color:#21409a;
+    }
+    .berita-all{
+        background-color: #21409a;
+        display: flex;
+    }
+    .card-group .card{
+        border: none;
+    }
+    .clickable-element .main-post .img{
+        border-radius: 10px;
+        width: 400px;
+        height: 150px;
+        overflow: hidden;
+
+    }
+    .clickable-element a .main-post .img:hover img{
+        transform: scale(1.2);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .clickable-element .main-post .img .img-fluid{
+        border-radius: 10px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    .berita-lain-nya .isi-beritalainnya{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .berita-lain-nya .isi-beritalainnya a{
+        text-decoration: none;
+        color: black;
+    }
+    .berita-lain-nya .isi-beritalainnya a .card{
+        overflow: hidden;
+    }
+    .berita-lain-nya .isi-beritalainnya a .card .card-img-top{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .berita-lain-nya .isi-beritalainnya a .card-body p{
+        font-weight: bold;
+    }
+    .berita-lain-nya .isi-beritalainnya a :hover{
+        color: #21409a;
+    }
+        /* readmore */
+    .readmore-blogger{
+        background-color: aliceblue;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    /*showIndex.blade.php  */
+    .show-table-bloger{
+        padding-top: 100px;
+    }
+    .show-table-bloger table{
+        width: 100%;
+    }
+    .show-table-bloger table tr td{
+        width: 100%;
+    }
+    .show-table-bloger table .blog-details{
+        width: 100%;
+    }
+    .blog-details .category small{
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .blog-details .title p{
+        font-size: 32px;
+        font-weight: bold;
+        color: #21409a;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .blog-details .img{
+        width: 100%;
+        text-align: center;
+    }
+    .blog-details img{
+        border-radius: 10px;
+        width: 90%;
+        height: 500px;
+        margin: auto;
+    }
+    .blog-details .content{
+        top: -140px;
+    }
+    .blog-details .content {
+        position: relative;
+        
+    }
+    /* sedbar left  */
+    .td-seedbar-blog .artikerl-pilihan{
+        width: 100%;
+    }
+    .td-seedbar-blog .artikerl-pilihan .berita-populer{
+        width: 100%;
+        display: flex;
+    }
+    /* blog-seach */
+    .blog-seach{
+        padding-top: 100px;
+    }
+    .td-seacrh{
+        width: 75%;
+    }
+    .blog-seach .post-search{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    /* .blog-seach .post-search .img {
+        
+    } */
+    .blog-seach .post-search .img img{
+        border-radius: 10px;
+        width: 150px;
+    }
+    .blog-seach .post-search .title{
+        padding-left: 20px;
+        font-weight: bold;
+    }
+    .td-seedbar-search{
+        vertical-align: top;
+        padding-top: 120px;
+        padding-left: 10px;
+        background-color: #21409a;
+    }
+    .show-table-bloger table tr .sedbar-show-blog{
+        width: 300px;
+        height: 100%;
+    }
+    .show-table-bloger table tr .td-sedbar{
+        vertical-align: top;
+        padding-top: 700px;
+    }
+
+
+    /* footer */
+    .footer{
+        background-color: #f9f9f9;
+    }
+    .footer hr{
+        border: 2px solid #21409a;
+    }
+    .footer .container{
+        background-color: #f9f9f9;
+        /* padding-top: 20px; */
+        display: flex;
+        justify-content:space-between ;
+    }
+    .footer .footer-icon-contact ul{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        list-style: none;
+        padding-top: 20px;
+
+    }
+    .footer .footer-icon-contact ul a{
+        color: black;
+        font-size: 25px;
+        padding-left: 30px;
+    }
+    .footer .footer-icon-contact ul a:hover{
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .footer .footer-category, .footer .footer-layanan{
+        display: flex;
+        width: 100%;
+    }
+    .footer .footer-category ul a,.footer .footer-layanan ul a{
+        text-decoration: none;
+        color: black;
+    }
+    .footer .footer-category ul a:hover,.footer .footer-layanan ul a:hover{
+        color: rgba(0, 0, 0, 0.5);
+    }
+
+    .footer .footer-category ul,.footer .footer-layanan ul{
+        list-style: none;
+    }
+
+    .footer .copyright .container{
+        display: block;
+    }
+    .footer .copyright .container p{
+        text-align: center;
+    }
+}
+/* app mobile */
+@media only screen and (max-width: 767px) {
+    .destop{
+        display: none;
+    }
+    .app-mobile .app-mobile-navbar{
+        background-color: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+    .app-mobile .app-mobile-navbar .navbar-sidebar .seedbar-button{
+        background-color: transparent;
+        border:none;
+        padding: 10px;
+    }
+    .app-mobile .app-mobile-navbar .navbar-sidebar img{
+        width: 150px;
+    }
+    .app-mobile .app-mobile-navbar .navbar-sidebar .offcanvas-body .dropdown ul{
+        background-color: #21409a;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .app-mobile .app-mobile-navbar .navbar-sidebar .offcanvas-body .dropdown ul li{
+        padding-top: 20px ;
+    }
+    .app-mobile .app-mobile-navbar .navbar-category{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            height: 56px; /* Tinggi navbar */
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            
+    }
+    .app-mobile .app-mobile-navbar .navbar-category ul{
+        list-style: none;
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .app-mobile .app-mobile-navbar .navbar-category ul li{
+        padding-right: 20px;
+    }
+    .app-mobile .app-mobile-navbar .navbar-category ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .app-mobile .app-mobile-navbar .navbar-category ul li a:hover{
+        color: #21409a;
+    }
+
+    /* blog/ content  */
+    .sidebar-content{
+        width: 100%;
+    }
+    .sidebar-content .seed-img .carousel-item{
+        background-size: cover;
+        padding-top: 50px;
+        /* width: 100%; */
+    }
+    .sidebar-content .seed-img .carousel-item img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .sles-kiri,.sles-kanan {
+        margin-top: 50px;
+    }
+    .tag-app-mobile ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    .content-app-mobile{
+        background-color: white;
+    }
+    .content-app-mobile .tag-app-mobile ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .content-app-mobile .tag-app-mobile ul li a:hover{
+        color: #21409a;
+    }
+        /*  */
+    .app-mobile .mobole12052004{
+        background-color: #f0f0f0;
+    }
+    .app-mobile .angker-content-main{
+        text-decoration: none;
+    }
+    .app-mobile .angker-content-main .content-main-post-app-mobile{
+        justify-content: space-between;
+        padding-top: 25px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .app-mobile .angker-content-main .content-main-post-app-mobile .title p{
+        color: black;
+        font-weight: bold;
+    }
+    .app-mobile .angker-content-main .content-main-post-app-mobile .title p:hover{
+        color: #21409a;
+    }
+
+
+    .app-mobile .content-main-post-app-mobile .img img{
+        width: 170px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 0 40px 0 40px;
+        padding-right: 20px;
+    }
+    .all-content-app-mobile .angker-all-content{
+        text-decoration: none;
+    }
+    .app-mobile .all-content-app-mobile a .content {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .app-mobile .all-content-app-mobile a .content .img img{
+        width: 120px;
+        border-radius: 10px 0 10px 0;
+        object-fit: cover;
+    }
+    .app-mobile .all-content-app-mobile a .content .title{
+        padding: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        color: black;
+    }
+    .app-mobile .all-content-app-mobile a .content .title:hover{
+        color: #21409a;
+    }
+        /* berita pilihan */
+    .berita-pilihan-app-mobile .container{
+        background-color: #f0f0f0;
+    }
+    .berita-pilihan-app-mobile .container .content-app-mobile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 3%;
+        background-color: #f0f0f0;
+    }
+    .berita-pilihan-app-mobile .container .angke-berita-pilihan{
+        text-decoration: none;
+    }
+    .berita-pilihan-app-mobile .container .angke-berita-pilihan .card{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        margin: 10px;
+    }
+    .berita-pilihan-app-mobile .container .angke-berita-pilihan .card:hover{
+        color: #21409a;
+    }
+    .berita-pilihan-app-mobile .container .angke-berita-pilihan .card .card-title img{
+        width: 90%;
+        height: 120px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .berita-pilihan-app-mobile .container .angke-berita-pilihan .card .isi-card{
+        width: 90%;
+    }
+    .berita-pilihan-app-mobile .container .angke-berita-pilihan .card .isi-card p{
+        font-weight: bold;
+        text-align: center;
+        font-size: 12px;
+    }
+        /* footer */
+    .app-mobile-footer .footer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height:380px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+    .app-mobile-footer .footer .logo img{
+        object-fit: cover;
+        width: 300px;
+    }
+    .app-mobile-footer .footer .icon-medsos a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+    }
+    .app-mobile-footer .footer .icon-medsos a:hover{
+        color: #21409a;
+    }
+    .app-mobile-footer .footer .icon-medsos{
+        font-size: 30px;
+        padding: 20px;
+    }
+    .app-mobile-footer .footer .layanan ul{
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .app-mobile-footer .footer .layanan ul li{
+        padding:5px ;
+    }
+    .app-mobile-footer .footer .layanan ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .app-mobile-footer .footer .layanan ul li a:hover{
+        color: #21409a;
+    }
+        /* show blog */
+   
+    .show-app-mobile .content-show-mobile{
+        padding-top: 50px;
+    }
+    .show-app-mobile .content-show-mobile .category small a{
+        text-decoration: none;
+        color: black;
+    }
+    .show-app-mobile .content-show-mobile .category small a:hover{
+        color: #21409a;
+    }
+    .show-app-mobile .content-show-mobile .title p{
+        font-size: 22px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20px;
+        color: #21409a;
+    }
+    .show-app-mobile .content-show-mobile .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .show-app-mobile .content-show-mobile .img img{
+        width: 100%;
+        border-radius: 20px 0 20px 0;
+    }
+    .show-app-mobile .content-show-mobile .article-content {
+        padding: 10px;
+    }
+    .show-app-mobile .content-show-mobile .icon-medsos{
+        align-items: center;
+        text-align: center;
+
+    }
+    .show-app-mobile .content-show-mobile .icon-medsos p{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .show-app-mobile .content-show-mobile .icon-medsos a{
+        text-decoration: none;
+        color: black;
+    }
+    .show-app-mobile .content-show-mobile .icon-medsos a:hover{
+        color: #21409a;
+    }
+    .show-app-mobile .content-show-mobile .icon-medsos i{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .show-app-mobile .content-show-mobile .berita-lain-nya a{
+        text-decoration: none;
+    }
+    .show-app-mobile .content-show-mobile .berita-lain-nya .post{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .show-app-mobile .content-show-mobile .berita-lain-nya .post .post-title{
+        margin-left: 10px;
+    }
+    .show-app-mobile .content-show-mobile .berita-lain-nya .post .post-title img{
+        object-fit: cover;
+        width: 150px;
+        border-radius: 0px 10px 0px 10px;
+    }
+    .show-app-mobile .content-show-mobile .berita-lain-nya .post .post-text p{
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 20px;
+        color: black;
+
+    }
+    .show-app-mobile .content-show-mobile .berita-lain-nya .post .post-text small{
+        padding-left: 20px;
+        color: black;
+    }
+    .show-app-mobile .content-show-mobile .berita-lain-nya .post .post-text p:hover{
+        color: #21409a;
+    }
+        /* search */
+    .serch-app-mobile{
+        padding-top: 60px;
+    }
+    .serch-app-mobile .serch-pencarian{
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .serch-app-mobile .serch-pencarian a i{
+        font-size: 25px;
+    }
+    .serch-app-mobile .serch-pencarian a{
+        text-decoration: none;
+        color: black;
+    }
+    .serch-app-mobile .serch-pencarian a:hover{
+        color: #21409a;
+    }
+
+    .serch-app-mobile .serch-pencarian p::first-letter{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    .serch-app-mobile .post{
+        padding: 10px;
+        display: flex;
+    }
+    .serch-app-mobile a{
+        text-decoration: none;
+    }
+    .serch-app-mobile .post .post-header img{
+        width: 170px;
+        border-radius: 0 10px 0 10px;
+        object-fit: contain;
+    }
+    .serch-app-mobile .post .post-body p{
+        font-size: 13px;
+        margin-left: 10px;
+        font-weight: bold;
+        color: black;
+    }
+    .serch-app-mobile .post .post-body p:hover{
+        color: #21409a;
+    }
+    .serch-app-mobile .post .post-body small{
+        margin-left: 10px;
+        font-size: 10px;
+        background-color:#f0f0f0;
+        position: absolute;
+    }
+}
